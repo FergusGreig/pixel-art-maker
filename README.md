@@ -2,15 +2,15 @@
 
 ## Table of Contents
 
+* [About](#About)
 * [Instructions](#instructions)
 * [Contributing](#contributing)
 
+## About
+Aims to allow user to create a grid of squares which can be coloured in order to produce large pixel style artworks.
+
 ## Instructions
-
-To get started, open `designs.js` and start building out the app's functionality.
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+To run: copy all files, open index.html
 
 ## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+This is a personal project to practice javascript so no pull requests will be accepted. 
