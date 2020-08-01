@@ -26,5 +26,7 @@ form.addEventListener("submit",function(event){
 })
 
 table.addEventListener('click',function(event){
-    event.target.style.backgroundColor = picker.value
+    if (event.target.innerHTML == ''){
+        event.target.style.backgroundColor = picker.value;
+    }
 })
