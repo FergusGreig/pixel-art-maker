@@ -1,32 +1,37 @@
 
 // FUNCTIONS
 function makeGrid(rows,cols) {
-    table.innerHTML = ''; // clears the grid
+    tableElem.innerHTML = ''; // clears the grid
     for (var i = 0; i<rows; i++){
-        row = table.insertRow(i);
+        row = tableElem.insertRow(i);
         for (var j = 0; j<cols; j++){
             row.insertCell(j)
         }
     }
 }
 
-//Delclarations
+//DECLARATIONS
 var width;
 var height;
-const table = document.getElementById('pixelCanvas');
-const picker = document.getElementById('colourPicker');
-const form = document.getElementById('sizePicker');
+const tableElem = document.getElementById('pixelCanvas');
+const pickerElem = document.getElementById('colourPicker');
+const formElem = document.getElementById('sizePicker');
 
-// Events 
-form.addEventListener("submit",function(event){
+// EVENTS:
+// Submit button makes a new table
+formElem.addEventListener("submit",function(event){
     event.preventDefault();
-    height = parseInt(form.elements[0].value, 10);
-    width = parseInt(form.elements[1].value,10);
+    height = parseInt(formElem.elements[0].value, 10);
+    width = parseInt(formElem.elements[1].value,10);
     makeGrid(height,width)
 })
 
-table.addEventListener('click',function(event){
-    if (event.target.innerHTML == ''){
-        event.target.style.backgroundColor = picker.value;
+// Clicking boxes colours them in.
+tableElem.addEventListener('click',function(event){
+    if (event.target.innerHTML == ''){ 
+        event.target.style.backgroundColor = pickerElem.value;
     }
+    /* As only the <td> elements will be blank in size this effectively 
+     prevents unexpected colouring.
+     */
 })
