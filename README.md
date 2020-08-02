@@ -8,7 +8,7 @@
 
 ## About
 Aims to allow user to create a grid of squares which can be coloured in order to produce large pixel style artworks.
-
+initial files were cloned from https://github.com/udacity/project-pixel-art-maker-starter
 ## Instructions
 To run: copy all files, open index.html
 
