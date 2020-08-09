@@ -1,5 +1,5 @@
 # Pixel Art Maker Project
-
+A DOM manipulation practise project.
 ## Table of Contents
 
 * [About](#About)
